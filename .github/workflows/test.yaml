@@ -22,5 +22,5 @@ jobs:
 
       - name: Build AAB
         run: |
-          cd ${{ github.workspace }}
+          cd '${{ github.workspace }}'
           ls -la
