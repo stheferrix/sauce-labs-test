@@ -22,5 +22,5 @@ jobs:
 
       - name: Build AAB
         run: |
-          cd ${{ github.workspace }}/android/app/build/outputs/bundle/release/
+          cd ${{ github.workspace }}
           ls -la
