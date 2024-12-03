@@ -1,0 +1,26 @@
+name: DevOps Troubleshoot Workflow
+
+on:
+  workflow_dispatch:
+  
+defaults:
+  run:
+    shell: bash
+  
+jobs:
+  build-aab:
+    name: Build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+
+
+      - name: Build AAB
+        run: |
+          cd ${{ github.workspace }}/android/app/build/outputs/bundle/release/
+          ls -la
